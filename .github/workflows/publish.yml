@@ -23,6 +23,9 @@ jobs:
         run: |
           Rscript -e 'install.packages(c("knitr", "rmarkdown", "reticulate"), repos="https://cloud.r-project.org")'
 
+      - name: Check reticulate installation
+        run: Rscript -e 'if (!require(reticulate)) stop("reticulate not found!") else cat("reticulate installed successfully!")'
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
