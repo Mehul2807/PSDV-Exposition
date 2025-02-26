@@ -1,8 +1,0 @@
----
-title: "Diffing & Merging of Jupyter Notebook"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
----
